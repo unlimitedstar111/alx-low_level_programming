@@ -6,7 +6,6 @@
  * free_grid - a function that frees a grid previously crested by alloc-grid
  * @grid: 2d grid
  * @height: height dimension of grid
- * Return: 0
  */
 
 void free_grid(int **grid, int height)
@@ -15,7 +14,7 @@ void free_grid(int **grid, int height)
 
 	for (i = 0; i < height; i++)
 	{
-		free(grid[1]);
+		free(grid[i]);
 	}
 	free(grid);
 }
